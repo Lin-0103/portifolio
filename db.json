@@ -1,0 +1,20 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "nome": "Collabore",
+            "image": "./src/images/projects/collabore/collabore.png",
+            "description": "O projeto Collabore se trata de uma aplicação web que visa conectar pessoas e ONGs que atuam no cambate a fome auxiliando na doação de alimentos para essas ONGs. A aplicação utiliza um banco de dados firebase que guarda as informações das ONgs cadastradas qu é utilizado na construção das paginas e permite o envio de e-mails como metodo de informar a ONG selecionada sobre novas doações",
+            "skills": {
+                "html": true,
+                "css": true,
+                "javascript": true,
+                "react": true,
+                "node": false,
+                "mongodb": false,
+                "sql": false
+            },
+            "github" : "https://github.com/Lin-0103/collabore.git"
+        }
+    ]
+}

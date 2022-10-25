@@ -1,0 +1,298 @@
+:root {
+    --main-color: #ad56cd;
+    --secondary-color: black;
+    --selected: #292929
+}
+
+body {
+    background-image: url(../images/-bit-sunset-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: 'VT323', monospace;
+    font-size: 75%;
+    color: white;
+
+    padding: 1%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+hr {
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    margin-top: 2px;
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav li {
+    padding: 10px;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.nav .selected {
+    background-color: var(--main-color);
+    border-radius: 5px;
+    color: white;
+}
+
+/* Main Card */
+.card {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--main-color);
+    width: 75vw;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Informações Pessoais  */
+.my-infos {
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.my-infos img {
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+    border: 3px solid var(--main-color);
+}
+
+.my-infos .name {
+    font-size: 26px;
+}
+
+.my-infos .job {
+    font-size: 20px;
+    color: #b8bbc5;
+}
+
+/* Conteudo */
+.content {
+    background-color: var(--secondary-color);
+    margin-top: 15px;
+}
+
+.content .tabs {
+    display: flex;
+}
+
+.tabs .tab {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.tabs img {
+    width: 15px;
+}
+
+.tab.selected {
+    background-color: var(--selected);
+}
+
+.info-tabs {
+    background-color: var(--selected);
+}
+
+.tab:hover {
+    background-color: #3b3b3b;
+}
+
+/* iformações */
+.info-tabs .info {
+    min-height: 260px;
+    display: none;
+    padding: 15px;
+}
+
+.info-tabs .info.selected {
+    display: block;
+}
+
+.info-tabs .subtitle {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info-tabs .description {
+    font-size: 15px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.description .intro-text {
+    text-align: center;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.social-medias {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.social-medias li a {
+    background-color: var(--main-color);
+    width: 250px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.social-medias li a:hover {
+    background-color: hsl(300, 100%, 32%);
+}
+
+/* Scroll */
+.description::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.description::-webkit-scrollbar-track {
+    background: var(--secondary-color)
+        /* color of the tracking area */
+}
+
+.description::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    border: 3px solid var(--secondary-color);
+    /* roundness of the scroll thumb */
+}
+
+/* Sections */
+.section {
+    display: none;
+}
+
+.section.selected {
+    display: block;
+}
+
+/* Section Projects */
+.projects-main {
+    display: flex;
+    margin-top: 20px;
+}
+
+.projects-main .projects-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-tab .project-tab {
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.projects-tab .project-tab.selected {
+    background-color: var(--selected);
+    color: var(--main-color);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .project {
+    display: none;
+}
+
+.projects .project.selected {
+    height: 500px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--selected);
+    overflow-y: auto;
+}
+
+.project-image {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.projects .project .title {
+    font-size: 22px;
+}
+
+.projects .project .description {
+    font-size: 15px;
+    max-width: 100%;
+}
+
+.project-skills {
+    width: 100%;
+}
+
+.project-skills h1 {
+    text-align: center;
+}
+
+.project-skills .skills {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-skill {
+    width: 25px;
+}
+
+.githubbutton {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.project::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.project::-webkit-scrollbar-track {
+    background: var(--secondary-color)
+        /* color of the tracking area */
+}
+
+.project::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    border: 3px solid var(--secondary-color);
+    /* roundness of the scroll thumb */
+}
