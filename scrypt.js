@@ -67,7 +67,7 @@ db.projects.forEach(project => {
     githubSection.classList.add('githubbutton')
     let githubLink = document.createElement('a')
     githubLink.href = project.github
-    githubLink.innerText = 'Vejo no GitHub'
+    githubLink.innerText = 'Veja no GitHub'
     githubLink.target = '_blank'
     githubSection.appendChild(githubLink)
 
